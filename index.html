@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="products">
+        <h2 class="h-desserts">Desserts</h2>
+        <div class="product-list">
+          <!-- This will contain all the products -->
+        </div>
+      </section>
+      <section class="selected-list">
+        <h3>Your Cart (<span class="selected-q">0</span>)</h3>
+        <ul class="selected-items">
+          <img
+            src="assets/images/illustration-empty-cart.svg"
+            alt="empty illustration image"
+          />
+          <p>Your added items will appear here</p>
+        </ul>
+      </section>
+
+      <!-- Custom Confirmation Modal -->
+      <div id="confirm-modal" class="modal">
+        <div class="modal-content">
+          <h3>Confirmation</h3>
+          <p id="confirm-message">Are you sure you want to remove this item?</p>
+          <button id="confirm-yes">Yes</button>
+          <button id="confirm-no">No</button>
+        </div>
+      </div>
+
+      <!-- Order Confirmation Modal -->
+      <div id="order-confirm-modal" class="order-confirm-modal">
+        <div class="confirm-modal-content">
+          <img
+            src="assets/images/icon-order-confirmed.svg"
+            alt="confirmation icon"
+            loading="lazy"
+          />
+          <h2>Order Confirmed</h2>
+          <p>We hope you enjoyed your food!</p>
+          <ul class="confirm-selected-items"></ul>
+          <div class="order-total">
+            <span class="order-total-text">Order Total</span>
+            <span class="order-total-money">$
+              <span class="order-total-dollar-t"></span>
+            </span>
+          </div>
+          <button id="startNew">Start New Order</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
