@@ -25,7 +25,7 @@ body{
     height: 100vh;
     font-size: 16px;
     font-family: 'Red Hat Text', sans-serif;
-    background-color: blue;
+    background-color: var(--rose100-color);
     overflow-x: hidden;
     margin:auto;
 }
